@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-12-04 11:03:45</td>
+            <td class="headerValue">2021-12-04 19:21:43</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">0</td>
@@ -276,15 +276,15 @@
 <a name="214"><span class="lineNum">     214 </span><span class="lineCov">          1 :                                     child: ListView.builder(</span></a>
 <a name="215"><span class="lineNum">     215 </span>            :                                       scrollDirection: Axis.horizontal,</a>
 <a name="216"><span class="lineNum">     216 </span><span class="lineCov">          1 :                                       itemBuilder: (context, index) {</span></a>
-<a name="217"><span class="lineNum">     217 </span><span class="lineCov">          2 :                                         final movie = state.result[index];</span></a>
+<a name="217"><span class="lineNum">     217 </span><span class="lineCov">          2 :                                         final tvseries = state.result[index];</span></a>
 <a name="218"><span class="lineNum">     218 </span><span class="lineCov">          1 :                                         return Padding(</span></a>
 <a name="219"><span class="lineNum">     219 </span>            :                                           padding: const EdgeInsets.all(4.0),</a>
 <a name="220"><span class="lineNum">     220 </span><span class="lineCov">          1 :                                           child: InkWell(</span></a>
 <a name="221"><span class="lineNum">     221 </span><span class="lineNoCov">          0 :                                             onTap: () {</span></a>
 <a name="222"><span class="lineNum">     222 </span><span class="lineNoCov">          0 :                                               Navigator.pushReplacementNamed(</span></a>
 <a name="223"><span class="lineNum">     223 </span>            :                                                 context,</a>
-<a name="224"><span class="lineNum">     224 </span>            :                                                 TV_SERIES_ROUTE,</a>
-<a name="225"><span class="lineNum">     225 </span><span class="lineNoCov">          0 :                                                 arguments: movie.id,</span></a>
+<a name="224"><span class="lineNum">     224 </span>            :                                                 TV_DETAIL_ROUTE,</a>
+<a name="225"><span class="lineNum">     225 </span><span class="lineNoCov">          0 :                                                 arguments: tvseries.id,</span></a>
 <a name="226"><span class="lineNum">     226 </span>            :                                               );</a>
 <a name="227"><span class="lineNum">     227 </span>            :                                             },</a>
 <a name="228"><span class="lineNum">     228 </span><span class="lineCov">          1 :                                             child: ClipRRect(</span></a>
@@ -293,7 +293,7 @@
 <a name="231"><span class="lineNum">     231 </span>            :                                               ),</a>
 <a name="232"><span class="lineNum">     232 </span><span class="lineCov">          1 :                                               child: CachedNetworkImage(</span></a>
 <a name="233"><span class="lineNum">     233 </span>            :                                                 imageUrl:</a>
-<a name="234"><span class="lineNum">     234 </span><span class="lineCov">          2 :                                                     'https://image.tmdb.org/t/p/w500${movie.posterPath}',</span></a>
+<a name="234"><span class="lineNum">     234 </span><span class="lineCov">          2 :                                                     'https://image.tmdb.org/t/p/w500${tvseries.posterPath}',</span></a>
 <a name="235"><span class="lineNum">     235 </span><span class="lineCov">          1 :                                                 placeholder: (context, url) =&gt;</span></a>
 <a name="236"><span class="lineNum">     236 </span><span class="lineCov">          1 :                                                     Center(</span></a>
 <a name="237"><span class="lineNum">     237 </span>            :                                                   child:</a>
