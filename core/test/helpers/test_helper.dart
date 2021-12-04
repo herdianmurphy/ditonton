@@ -3,30 +3,30 @@ import 'package:core/core.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/io_client.dart';
 import 'package:mockito/annotations.dart';
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart' as tail;
 import 'package:movie/movie.dart';
 import 'package:tvseries/tvseries.dart';
 
 class MockMovieDetailBloc extends MockBloc<MovieDetailEvent, MovieDetailState>
     implements MovieDetailBloc {}
 
-class MovieDetailEventFake extends Fake implements MovieDetailEvent {}
-class MovieDetailStateFake extends Fake implements MovieDetailState {}
+class MovieDetailEventFake extends tail.Fake implements MovieDetailEvent {}
+class MovieDetailStateFake extends tail.Fake implements MovieDetailState {}
 
 class MockMovieWatchlistBloc
     extends MockBloc<WatchlistMovieEvent, WatchlistMovieState>
     implements WatchlistMovieBloc {}
 
-class WatchlistMovieEventFake extends Fake implements WatchlistMovieEvent {}
-class WatchlistMovieStateFake extends Fake implements WatchlistMovieState {}
+class WatchlistMovieEventFake extends tail.Fake implements WatchlistMovieEvent {}
+class WatchlistMovieStateFake extends tail.Fake implements WatchlistMovieState {}
 
 class MockMovieRecommendationBloc
     extends MockBloc<MovieRecommendationEvent, MovieRecommendationState>
     implements MovieRecommendationBloc {}
 
-class MovieRecommendationEventFake extends Fake
+class MovieRecommendationEventFake extends tail.Fake
     implements MovieRecommendationEvent {}
-class MovieRecommendationStateFake extends Fake
+class MovieRecommendationStateFake extends tail.Fake
     implements MovieRecommendationState {}
 
 class MockPopularMovieBloc
@@ -46,23 +46,23 @@ class TopRatedMovieStateFake extends TopRatedMovieState {}
 class MockTvSeriesDetailBloc extends MockBloc<TvSeriesDetailEvent, TvSeriesDetailState>
     implements TvSeriesDetailBloc {}
 
-class TvSeriesDetailEventFake extends Fake implements TvSeriesDetailEvent {}
-class TvSeriesDetailStateFake extends Fake implements TvSeriesDetailState {}
+class TvSeriesDetailEventFake extends tail.Fake implements TvSeriesDetailEvent {}
+class TvSeriesDetailStateFake extends tail.Fake implements TvSeriesDetailState {}
 
 class MockTvSeriesWatchlistBloc
     extends MockBloc<WatchlistTvSeriesEvent, WatchlistTvSeriesState>
     implements WatchlistTvSeriesBloc {}
 
-class WatchlistTvSeriesEventFake extends Fake implements WatchlistTvSeriesEvent {}
-class WatchlistTvSeriesStateFake extends Fake implements WatchlistTvSeriesState {}
+class WatchlistTvSeriesEventFake extends tail.Fake implements WatchlistTvSeriesEvent {}
+class WatchlistTvSeriesStateFake extends tail.Fake implements WatchlistTvSeriesState {}
 
 class MockTvSeriesRecommendationBloc
     extends MockBloc<TvSeriesRecommendationEvent, TvSeriesRecommendationState>
     implements TvSeriesRecommendationBloc {}
 
-class TvSeriesRecommendationEventFake extends Fake
+class TvSeriesRecommendationEventFake extends tail.Fake
     implements TvSeriesRecommendationEvent {}
-class TvSeriesRecommendationStateFake extends Fake
+class TvSeriesRecommendationStateFake extends tail.Fake
     implements TvSeriesRecommendationState {}
 
 class MockPopularTvSeriesBloc
