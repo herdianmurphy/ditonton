@@ -20,10 +20,18 @@ dependencies:
   sqflite_sqlcipher: ^2.1.0
   # sqflite: ^2.0.0+3
 
+  movie:
+    path: ../movie
+  search:
+    path: ../search
+  tvseries:
+    path: ../tvseries
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  bloc_test: ^8.0.0
   build_runner: ^2.1.5
   flutter_lints: ^1.0.4
   mockito: ^5.0.8

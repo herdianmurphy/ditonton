@@ -478,6 +478,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.0"
+  movie:
+    dependency: transitive
+    description:
+      path: "../movie"
+      relative: true
+    source: path
+    version: "0.0.1"
   nested:
     dependency: transitive
     description:
@@ -632,6 +639,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.3"
+  search:
+    dependency: transitive
+    description:
+      path: "../search"
+      relative: true
+    source: path
+    version: "0.0.1"
   shelf:
     dependency: transitive
     description:

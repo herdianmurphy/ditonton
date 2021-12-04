@@ -1,4 +1,3 @@
-import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -6,28 +5,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:movie/movie.dart';
 
 import '../../../../core/test/dummy_data/dummy_objects.dart';
-
-class MockMovieDetailBloc extends MockBloc<MovieDetailEvent, MovieDetailState>
-    implements MovieDetailBloc {}
-
-class MovieDetailEventFake extends Fake implements MovieDetailEvent {}
-class MovieDetailStateFake extends Fake implements MovieDetailState {}
-
-class MockMovieWatchlistBloc
-    extends MockBloc<WatchlistMovieEvent, WatchlistMovieState>
-    implements WatchlistMovieBloc {}
-
-class WatchlistMovieEventFake extends Fake implements WatchlistMovieEvent {}
-class WatchlistMovieStateFake extends Fake implements WatchlistMovieState {}
-
-class MockMovieRecommendationBloc
-    extends MockBloc<MovieRecommendationEvent, MovieRecommendationState>
-    implements MovieRecommendationBloc {}
-
-class MovieRecommendationEventFake extends Fake
-    implements MovieRecommendationEvent {}
-class MovieRecommendationStateFake extends Fake
-    implements MovieRecommendationState {}
+import '../../../../core/test/helpers/test_helper.dart';
 
 void main() {
   late MockMovieDetailBloc mockMovieDetailBloc;

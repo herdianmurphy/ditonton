@@ -6,13 +6,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:tvseries/tvseries.dart';
 
 import '../../../../core/test/dummy_data/dummy_objects.dart';
-
-class MockPopularTvSeriesBloc
-    extends MockBloc<PopularTvSeriesEvent, PopularTvSeriesState>
-    implements PopularTvSeriesBloc {}
-
-class PopularTvSeriesEventFake extends PopularTvSeriesEvent {}
-class PopularTvSeriesStateFake extends PopularTvSeriesState {}
+import '../../../../core/test/helpers/test_helper.dart';
 
 void main() {
   late MockPopularTvSeriesBloc mockPopularTvSeriesBloc;

@@ -6,13 +6,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:tvseries/tvseries.dart';
 
 import '../../../../core/test/dummy_data/dummy_objects.dart';
-
-class MockTopRatedTvSeriesBloc
-    extends MockBloc<TopRatedTvSeriesEvent, TopRatedTvSeriesState>
-    implements TopRatedTvSeriesBloc {}
-
-class TopRatedTvSeriesEventFake extends TopRatedTvSeriesEvent {}
-class TopRatedTvSeriesStateFake extends TopRatedTvSeriesState {}
+import '../../../../core/test/helpers/test_helper.dart';
 
 void main() {
   late MockTopRatedTvSeriesBloc mockTopRatedTvSeriesBloc;

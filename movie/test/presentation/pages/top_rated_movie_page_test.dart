@@ -6,13 +6,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:movie/movie.dart';
 
 import '../../../../core/test/dummy_data/dummy_objects.dart';
-
-class MockTopRatedMovieBloc
-    extends MockBloc<TopRatedMovieEvent, TopRatedMovieState>
-    implements TopRatedMovieBloc {}
-
-class TopRatedMovieEventFake extends TopRatedMovieEvent {}
-class TopRatedMovieStateFake extends TopRatedMovieState {}
+import '../../../../core/test/helpers/test_helper.dart';
 
 void main() {
   late MockTopRatedMovieBloc mockTopRatedMovieBloc;

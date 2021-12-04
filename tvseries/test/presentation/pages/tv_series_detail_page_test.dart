@@ -6,28 +6,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:tvseries/tvseries.dart';
 
 import '../../../../core/test/dummy_data/dummy_objects.dart';
-
-class MockTvSeriesDetailBloc extends MockBloc<TvSeriesDetailEvent, TvSeriesDetailState>
-    implements TvSeriesDetailBloc {}
-
-class TvSeriesDetailEventFake extends Fake implements TvSeriesDetailEvent {}
-class TvSeriesDetailStateFake extends Fake implements TvSeriesDetailState {}
-
-class MockTvSeriesWatchlistBloc
-    extends MockBloc<WatchlistTvSeriesEvent, WatchlistTvSeriesState>
-    implements WatchlistTvSeriesBloc {}
-
-class WatchlistTvSeriesEventFake extends Fake implements WatchlistTvSeriesEvent {}
-class WatchlistTvSeriesStateFake extends Fake implements WatchlistTvSeriesState {}
-
-class MockTvSeriesRecommendationBloc
-    extends MockBloc<TvSeriesRecommendationEvent, TvSeriesRecommendationState>
-    implements TvSeriesRecommendationBloc {}
-
-class TvSeriesRecommendationEventFake extends Fake
-    implements TvSeriesRecommendationEvent {}
-class TvSeriesRecommendationStateFake extends Fake
-    implements TvSeriesRecommendationState {}
+import '../../../../core/test/helpers/test_helper.dart';
 
 void main() {
   late MockTvSeriesDetailBloc mockTvSeriesDetailBloc;
