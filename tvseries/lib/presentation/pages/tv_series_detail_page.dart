@@ -214,15 +214,15 @@ class DetailContent extends StatelessWidget {
                                     child: ListView.builder(
                                       scrollDirection: Axis.horizontal,
                                       itemBuilder: (context, index) {
-                                        final movie = state.result[index];
+                                        final tvseries = state.result[index];
                                         return Padding(
                                           padding: const EdgeInsets.all(4.0),
                                           child: InkWell(
                                             onTap: () {
                                               Navigator.pushReplacementNamed(
                                                 context,
-                                                TV_SERIES_ROUTE,
-                                                arguments: movie.id,
+                                                TV_DETAIL_ROUTE,
+                                                arguments: tvseries.id,
                                               );
                                             },
                                             child: ClipRRect(
@@ -231,7 +231,7 @@ class DetailContent extends StatelessWidget {
                                               ),
                                               child: CachedNetworkImage(
                                                 imageUrl:
-                                                    'https://image.tmdb.org/t/p/w500${movie.posterPath}',
+                                                    'https://image.tmdb.org/t/p/w500${tvseries.posterPath}',
                                                 placeholder: (context, url) =>
                                                     Center(
                                                   child:
