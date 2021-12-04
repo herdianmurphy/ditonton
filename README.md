@@ -1,3 +1,5 @@
+[![Codemagic build status](https://api.codemagic.io/apps/61aaf2c74dbf79dba251ec47/61aaf2c74dbf79dba251ec46/status_badge.svg)](https://codemagic.io/apps/61aaf2c74dbf79dba251ec47/61aaf2c74dbf79dba251ec46/latest_build)
+
 ## Ditonton App
 Project ini merupakan proyek akhir sebagai persyaratan untuk dapat lulus dari kelas Menjadi Flutter Developer Expert dalam Academy Dicoding.
 
