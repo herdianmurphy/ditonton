@@ -1,0 +1,83 @@
+{
+  "backdrop_path": "/path.jpg",
+  "created_by": [],
+  "episode_run_time": [
+    60
+  ],
+  "first_air_date": "2004-01-12",
+  "genres": [
+    {
+      "id": 1,
+      "name": "Action"
+    }
+  ],
+  "homepage": "https://google.com",
+  "id": 1,
+  "in_production": false,
+  "languages": [
+    "ja"
+  ],
+  "last_air_date": "2004-03-22",
+  "last_episode_to_air": {
+    "air_date": "2004-03-22",
+    "episode_number": 11,
+    "id": 1,
+    "name": "Name",
+    "overview": "",
+    "production_code": "",
+    "season_number": 1,
+    "still_path": null,
+    "vote_average": 0.0,
+    "vote_count": 0
+  },
+  "name": "Name",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "name": "Name",
+      "id": 1,
+      "logo_path": "/path.png",
+      "origin_country": "JP"
+    }
+  ],
+  "number_of_episodes": 11,
+  "number_of_seasons": 1,
+  "origin_country": [
+    "JP"
+  ],
+  "original_language": "Original Language",
+  "original_name": "Original Name",
+  "overview": "Overview",
+  "popularity": 1.0,
+  "poster_path": "/path.jpg",
+  "production_companies": [],
+  "production_countries": [
+    {
+      "iso_3166_1": "JP",
+      "name": "Japan"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2004-01-12",
+      "episode_count": 11,
+      "id": 1,
+      "name": "Name",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 1
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "Japanese",
+      "iso_639_1": "ja",
+      "name": "Name"
+    }
+  ],
+  "status": "Status",
+  "tagline": "Tagline",
+  "type": "Type",
+  "vote_average": 1.0,
+  "vote_count": 1
+}
